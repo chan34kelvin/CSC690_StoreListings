@@ -11,8 +11,8 @@ import UIKit
 class AccountTableViewCell: UITableViewCell {
 
     @IBOutlet weak var accountEmail: UILabel!
+    @IBOutlet weak var accountStatus: UILabel!
     
-    @IBOutlet weak var accountPassword: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

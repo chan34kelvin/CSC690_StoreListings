@@ -12,9 +12,11 @@ struct Account: Codable{
 
     let password: String
     let email: String
+    let status: String
     
-    init(email1: String, password1: String){
+    init(email1: String, password1: String, status1: String){
         email = email1
         password = password1
+        status = status1
     }
 }

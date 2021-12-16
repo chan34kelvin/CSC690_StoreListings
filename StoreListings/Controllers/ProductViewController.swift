@@ -37,11 +37,11 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func getProducts(){
-        let product1 = Product(name1: "ps5 digital", image1: "ps5digital", id1: "Out of stock")
+        let product1 = Product(name1: "ps5 digital", image1: "ps5digital", id1: "Consoles")
         productItems.append(product1)
-        let product2 = Product(name1: "ps5 disc", image1: "ps5disc", id1: "Out of stock")
+        let product2 = Product(name1: "ps5 disc", image1: "ps5disc", id1: "Consoles")
         productItems.append(product2)
-        let product3 = Product(name1: "xbox", image1: "xbox", id1: "Out of stock")
+        let product3 = Product(name1: "xbox", image1: "xbox", id1: "Consoles")
         productItems.append(product3)
     }
     
@@ -74,7 +74,7 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
 
         let product = productItems[indexPath.row]
         cell.productName.text = product.name
-        cell.productId.text = "Stat: "+product.id
+        cell.productId.text = "Type: "+product.id
         cell.productImage.image = UIImage(named: product.image)
         
 //        cell.storeTitleLabel.text = store.storeName

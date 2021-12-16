@@ -497,7 +497,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="accountEmail" destination="MIK-2I-rlI" id="VCW-dg-AJw"/>
-                                            <outlet property="accountPassword" destination="qdu-dY-n5n" id="y8D-TB-ipi"/>
+                                            <outlet property="accountStatus" destination="qdu-dY-n5n" id="rec-h0-kN8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+//check status if your product is ready for pickup
 class AccountViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var accountView: UITableView!
@@ -35,7 +36,7 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         productTitle.text = productName
         productPicture.image = UIImage(named: productImage)
-        productId.text = "Stat:" + productsId
+        productId.text = "Type:" + productsId
         
         //getting accounts with key
         let key = zip + storeName + storeAddress + productName + productsId
@@ -53,8 +54,15 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func setAccount(newEmail: String, newPassword: String){
+        
+        var status:String = "ready to pick up"
+        //just for mimic purpose since no actual login yet
+        print(Int.random(in: 1..<3))
+        if(Int.random(in: 1..<3) == 1){
+            status = "not ready to pick up"
+        }
 
-        let newAccount = Account(email1: newEmail, password1: newPassword)
+        let newAccount = Account(email1: newEmail, password1: newPassword, status1: status)
         
         if(accountItems[0].email == "No accs yet"){
             accountItems[0] = newAccount
@@ -74,7 +82,7 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
     func updateAccounts(){
         print(accountItems.count)
         if(accountItems.count == 0){
-            accountItems.append(Account(email1: "No accs yet", password1: "Login to follow"))
+            accountItems.append(Account(email1: "No accs yet", password1: "test123", status1: "Login to follow"))
         }
         accountView.reloadData()
     }
@@ -102,8 +110,8 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
         }
 
         let account = accountItems[indexPath.row]
-        cell.accountEmail.text = "Email: "+account.email
-        cell.accountPassword.text = "Password: "+account.password
+        cell.accountEmail.text = "Account: "+account.email
+        cell.accountStatus.text = "Stat: "+account.status
         
         return cell
     }
