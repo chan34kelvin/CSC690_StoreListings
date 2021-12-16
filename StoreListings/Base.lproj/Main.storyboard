@@ -439,7 +439,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in to follow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwA-q6-L35">
-                                <rect key="frame" x="0.0" y="208" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="199" width="414" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="3QK-6F-DEG"/>
                                 </constraints>
@@ -447,20 +447,8 @@
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPa-Uu-cqX">
-                                <rect key="frame" x="167" y="263" width="80" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="6si-Nx-Rlb"/>
-                                    <constraint firstAttribute="width" constant="80" id="c73-h7-90B"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
-                                <connections>
-                                    <segue destination="FEQ-yt-9M6" kind="presentation" id="0qR-jA-7ie"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="A4S-YB-Sn8">
-                                <rect key="frame" x="0.0" y="338" width="414" height="524"/>
+                                <rect key="frame" x="0.0" y="334" width="414" height="528"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AccountCell" rowHeight="80" id="Eb9-IL-IlL" customClass="AccountTableViewCell" customModule="StoreListings" customModuleProvider="target">
@@ -502,6 +490,22 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJg-au-udU">
+                                <rect key="frame" x="170" y="285" width="74" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshData:" destination="Z51-PE-C9s" eventType="touchUpInside" id="UTU-ph-oj8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPa-Uu-cqX">
+                                <rect key="frame" x="177.5" y="237" width="59.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                <connections>
+                                    <segue destination="FEQ-yt-9M6" kind="presentation" id="0qR-jA-7ie"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Eh-l5-Jj4"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
@@ -509,13 +513,14 @@
                             <constraint firstItem="8Eh-l5-Jj4" firstAttribute="bottom" secondItem="A4S-YB-Sn8" secondAttribute="bottom" id="0AE-s0-Lga"/>
                             <constraint firstItem="B1D-ET-WV7" firstAttribute="leading" secondItem="ScO-Qz-Xb0" secondAttribute="trailing" constant="15" id="13B-aY-c9d"/>
                             <constraint firstItem="KJF-IS-Es8" firstAttribute="top" secondItem="B1D-ET-WV7" secondAttribute="bottom" constant="40" id="25c-YM-bz5"/>
-                            <constraint firstItem="XPa-Uu-cqX" firstAttribute="top" secondItem="mwA-q6-L35" secondAttribute="bottom" constant="25" id="4Vx-Hx-LMu"/>
+                            <constraint firstItem="zJg-au-udU" firstAttribute="centerX" secondItem="mwA-q6-L35" secondAttribute="centerX" id="E9r-FG-j3r"/>
                             <constraint firstItem="A4S-YB-Sn8" firstAttribute="bottom" secondItem="8Eh-l5-Jj4" secondAttribute="bottom" id="F0n-j0-yg6"/>
                             <constraint firstItem="A4S-YB-Sn8" firstAttribute="leading" secondItem="8Eh-l5-Jj4" secondAttribute="leading" id="JkM-ni-DaE"/>
                             <constraint firstItem="8Eh-l5-Jj4" firstAttribute="trailing" secondItem="B1D-ET-WV7" secondAttribute="trailing" constant="15" id="KGj-xP-v6O"/>
-                            <constraint firstItem="XPa-Uu-cqX" firstAttribute="centerX" secondItem="mwA-q6-L35" secondAttribute="centerX" id="OGW-dt-1nB"/>
+                            <constraint firstItem="A4S-YB-Sn8" firstAttribute="bottom" secondItem="8Eh-l5-Jj4" secondAttribute="bottom" id="LeP-6u-4oj"/>
+                            <constraint firstItem="A4S-YB-Sn8" firstAttribute="leading" secondItem="8Eh-l5-Jj4" secondAttribute="leading" id="Phx-bU-ol6"/>
                             <constraint firstItem="KJF-IS-Es8" firstAttribute="leading" secondItem="ScO-Qz-Xb0" secondAttribute="trailing" constant="15" id="Quo-Qf-DKU"/>
-                            <constraint firstItem="A4S-YB-Sn8" firstAttribute="top" secondItem="XPa-Uu-cqX" secondAttribute="bottom" constant="40" id="RI7-RC-39V"/>
+                            <constraint firstItem="XPa-Uu-cqX" firstAttribute="centerX" secondItem="mwA-q6-L35" secondAttribute="centerX" id="W7W-D8-9wI"/>
                             <constraint firstItem="A4S-YB-Sn8" firstAttribute="trailing" secondItem="8Eh-l5-Jj4" secondAttribute="trailing" id="bAE-g6-7Up"/>
                             <constraint firstItem="A4S-YB-Sn8" firstAttribute="leading" secondItem="8Eh-l5-Jj4" secondAttribute="leading" id="bz8-dZ-BKz"/>
                             <constraint firstItem="ScO-Qz-Xb0" firstAttribute="top" secondItem="8Eh-l5-Jj4" secondAttribute="top" constant="10" id="eVK-QJ-bt0"/>
@@ -523,9 +528,13 @@
                             <constraint firstItem="8Eh-l5-Jj4" firstAttribute="trailing" secondItem="KJF-IS-Es8" secondAttribute="trailing" constant="15" id="gB0-fs-Vnf"/>
                             <constraint firstItem="B1D-ET-WV7" firstAttribute="top" secondItem="8Eh-l5-Jj4" secondAttribute="top" constant="10" id="hi6-3F-ddZ"/>
                             <constraint firstItem="8Eh-l5-Jj4" firstAttribute="trailing" secondItem="A4S-YB-Sn8" secondAttribute="trailing" id="i0u-kX-XFt"/>
-                            <constraint firstItem="mwA-q6-L35" firstAttribute="top" secondItem="KJF-IS-Es8" secondAttribute="bottom" constant="64" id="iFB-e9-wmN"/>
+                            <constraint firstItem="mwA-q6-L35" firstAttribute="top" secondItem="KJF-IS-Es8" secondAttribute="bottom" constant="55" id="iFB-e9-wmN"/>
+                            <constraint firstItem="zJg-au-udU" firstAttribute="top" secondItem="XPa-Uu-cqX" secondAttribute="bottom" constant="17" id="nTC-7D-RiZ"/>
                             <constraint firstItem="ScO-Qz-Xb0" firstAttribute="leading" secondItem="8Eh-l5-Jj4" secondAttribute="leading" constant="20" id="oDr-XJ-Adt"/>
+                            <constraint firstItem="XPa-Uu-cqX" firstAttribute="top" secondItem="mwA-q6-L35" secondAttribute="bottom" constant="8" symbolic="YES" id="pwT-AE-EG1"/>
                             <constraint firstItem="mwA-q6-L35" firstAttribute="leading" secondItem="8Eh-l5-Jj4" secondAttribute="leading" id="sMI-RR-k1l"/>
+                            <constraint firstItem="A4S-YB-Sn8" firstAttribute="trailing" secondItem="8Eh-l5-Jj4" secondAttribute="trailing" id="vWi-hz-Orx"/>
+                            <constraint firstItem="A4S-YB-Sn8" firstAttribute="top" secondItem="zJg-au-udU" secondAttribute="bottom" constant="18" id="xaA-Yr-Dwg"/>
                         </constraints>
                     </view>
                     <connections>

@@ -55,12 +55,7 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func setAccount(newEmail: String, newPassword: String){
         
-        var status:String = "ready to pick up"
-        //just for mimic purpose since no actual login yet
-        print(Int.random(in: 1..<3))
-        if(Int.random(in: 1..<3) == 1){
-            status = "not ready to pick up"
-        }
+        let status:String = "not ready to pick up"
 
         let newAccount = Account(email1: newEmail, password1: newPassword, status1: status)
         
@@ -77,6 +72,27 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
         }
         
         updateAccounts()
+    }
+    
+    @IBAction func refreshData(_ sender: Any) {
+        
+        //just for mimic purpose since no actual data
+        var refreshItems: [Account] = []
+        for item in accountItems{
+            if((item.email != "No accs yet") && (item.status != "ready to pick up")){
+                var status: String = "ready to pick up"
+                if(Int.random(in: 1..<3) == 1){
+                    status = "not ready to pick up"
+                }
+                let newAccount = Account(email1: item.email, password1: item.password, status1: status)
+                refreshItems.append(newAccount)
+            }else{
+                let newAccount = Account(email1: item.email, password1: item.password, status1: item.status)
+                refreshItems.append(newAccount)
+            }
+        }
+        accountItems = refreshItems
+        accountView.reloadData()
     }
     
     func updateAccounts(){
