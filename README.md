@@ -20,6 +20,8 @@ simply git clone and you can use it on xcode
 
 3. Click your product and simply login to recieve information related to your pick up of the product. 
 
+4. Press refresh to get the latest update of whether your product is ready for pick up. (It doesn't show any alerts saying it refreshed but it does)
+
 # Purpose of making this
 
 1. The main purpose of this app is to assist user with target console pickups
