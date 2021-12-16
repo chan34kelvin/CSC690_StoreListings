@@ -84,6 +84,12 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     //called when pressed cell
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        //if zip isnt valid, stop the process
+        if(storeItems[indexPath.row].name == "No stores found"){
+            return
+        }
+        
         let vc = storyboard?.instantiateViewController(withIdentifier: "ProductViewController") as? ProductViewController
         vc?.store = storeItems[indexPath.row].name
         vc?.address = storeItems[indexPath.row].address
