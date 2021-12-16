@@ -65,12 +65,6 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
             accountItems.append(newAccount)
         }
         
-        let key = zip+storeName+storeAddress+productName+productsId
-        //store updated accounts
-        if let encoded = try? encoder.encode(accountItems) {
-            defaults.set(encoded, forKey: key)
-        }
-        
         updateAccounts()
     }
     
@@ -91,12 +85,20 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
                 refreshItems.append(newAccount)
             }
         }
+        
+        print("refreshed")
         accountItems = refreshItems
-        accountView.reloadData()
+        updateAccounts()
     }
     
     func updateAccounts(){
-        print(accountItems.count)
+        
+        let key = zip+storeName+storeAddress+productName+productsId
+        //store updated accounts
+        if let encoded = try? encoder.encode(accountItems) {
+            defaults.set(encoded, forKey: key)
+        }
+        
         if(accountItems.count == 0){
             accountItems.append(Account(email1: "No accs yet", password1: "test123", status1: "Login to follow"))
         }
