@@ -1,5 +1,7 @@
 # CSC690_StoreListings
 
+simply git clone and you can use it on xcode
+
 # Students working on this:
 
 1. Steven Liao
