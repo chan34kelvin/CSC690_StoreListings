@@ -10,7 +10,7 @@ simply git clone and you can use it on xcode
 
 # What is this project?
 
-This purpose of this app is to track the product orders of the target accounts obtained from the user. It helps the user keep track of when his/her order is ready to pick up at any target store.
+A store listing app that tracks product order pickups in any target store provided with nearest zipcode.
 
 # How to use?
 
