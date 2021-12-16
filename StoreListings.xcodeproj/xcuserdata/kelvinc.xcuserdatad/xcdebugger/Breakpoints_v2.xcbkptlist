@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B9698F05-728E-44F5-8176-0E6D901B7531"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "030AD6E6-09D3-4CA6-A67C-7E32AFB2AB28"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StoreListings/Controllers/AddZipCodeController1.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "AddZipCodeController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "030AD6E6-09D3-4CA6-A67C-7E32AFB2AB28 - 6f8a022166d65b72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoreListings.AddZipCodeController1.zipCodeInput.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "StoreListings"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kelvinc/Desktop/CSC690/StoreListings/StoreListings/Controllers/AddZipCodeController1.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "030AD6E6-09D3-4CA6-A67C-7E32AFB2AB28 - 8c609fb5f9a83786"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoreListings.AddZipCodeController1.zipCodeInput.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "StoreListings"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kelvinc/Desktop/CSC690/StoreListings/StoreListings/Controllers/AddZipCodeController1.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "030AD6E6-09D3-4CA6-A67C-7E32AFB2AB28 - 2a88e3a159ae22a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoreListings.AddZipCodeController1.zipCodeInput.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "StoreListings"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kelvinc/Desktop/CSC690/StoreListings/StoreListings/Controllers/AddZipCodeController1.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "030AD6E6-09D3-4CA6-A67C-7E32AFB2AB28 - 75abce939a50b0dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoreListings.AddZipCodeController1.zipCodeInput.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "StoreListings"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kelvinc/Desktop/CSC690/StoreListings/StoreListings/Controllers/AddZipCodeController1.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "030AD6E6-09D3-4CA6-A67C-7E32AFB2AB28 - 6eb2ab4a34fe13d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoreListings.AddZipCodeController1.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; StoreListings.AddZipCodeController1"
+                  moduleName = "StoreListings"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kelvinc/Desktop/CSC690/StoreListings/StoreListings/Controllers/AddZipCodeController1.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "030AD6E6-09D3-4CA6-A67C-7E32AFB2AB28 - 3b862e6d87ebec80"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StoreListings.AddZipCodeController1.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;StoreListings.AddZipCodeController1&gt;"
+                  moduleName = "StoreListings"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kelvinc/Desktop/CSC690/StoreListings/StoreListings/Controllers/AddZipCodeController1.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
