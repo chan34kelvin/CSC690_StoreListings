@@ -35,7 +35,7 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         productTitle.text = productName
         productPicture.image = UIImage(named: productImage)
-        productId.text = "ID:" + productsId
+        productId.text = "Stat:" + productsId
         
         //getting accounts with key
         let key = zip + storeName + storeAddress + productName + productsId
