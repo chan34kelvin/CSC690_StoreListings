@@ -10,7 +10,7 @@ simply git clone and you can use it on xcode
 
 # What is this project?
 
-1. A store listing app that tracks product order pickups in any target store provided with nearest zipcode.
+1. A store listing app that tracks product order pickups in any target store provided with the nearest zipcode.
 
 # How to use?
 
