@@ -1,4 +1,4 @@
-# CSC690_StoreListings
+# CSC690_StoreListings_IOS_App
 
 simply git clone and you can use it on xcode
 
