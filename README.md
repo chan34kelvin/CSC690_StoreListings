@@ -1,5 +1,7 @@
 # CSC690_StoreListings_IOS_App
 
+The Target Store Listings App is an iOS application developed to efficiently track product order pickups at a Target store based on the provided nearest zip code. It was implemented with Storyboard, UIKit, and Swift in Xcode.
+
 simply git clone and you can use it on xcode
 
 # Students working on this:
@@ -7,10 +9,6 @@ simply git clone and you can use it on xcode
 1. Steven Liao
 
 2. Kelvin Ching Kiu Chan
-
-# What is this project?
-
-1. A store listing app built using UIKit and swift in xcode that tracks product order pickups in any target store provided with the nearest zipcode.
 
 # How to use?
 
